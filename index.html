@@ -134,12 +134,16 @@
     <div class="content-box p-6 mb-8">
         <h2 class="text-3xl font-bold mb-4">Аудіо</h2>
         <div class="rounded-lg overflow-hidden">
-          <audio controls class="w-full">
-            <source src="path/to/audio-file.mp3" type="audio/mpeg">
+          <audio controls class="w-full" autoplay>
+            <source src="../Лаб6/swrslt.mp3" type="audio/mpeg">
           </audio>
         </div>
+        <script>
+          const audioElement = document.querySelector('audio');
+          audioElement.volume = 0.1; 
+        </script>
       </div>
-    </div>
+      
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
